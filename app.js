@@ -16,5 +16,5 @@ function randomQuotesGenerator() {
     let quotesGen = quotes[roundQuotes];
     
     let random_Quotes =document.querySelector('#quotes');
-    quotes.innertext = `" ${quotesGen} " `;
+    random_Quotes.innertext = `" ${quotesGen} " `;
   }
