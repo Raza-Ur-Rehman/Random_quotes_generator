@@ -9,6 +9,12 @@ function randomQuotesGenerator() {
     "Dil ki baat dil mein na rakhna,Aankhon se aankhon ki baat kehna,Dost toh har koi bana sakta hai,Magar dosti nibhana mushkil hota hai.",
     "Dil ki duniya mein koi gham na ho,Khuda kare zindagi mein koi kami na ho,Har pal pyar ka ehsaas ho tumhe,Dosti ka saath ho aur yaadon ka sahara ho tumhe.",
     "Tanhaiyon mein bhi tera saath chahiye,Muskurahaton mein bhi tera saath chahiye,Zindagi mein har kadam par yaad aaye tu,Kyunki teri dosti hi meri zindagi ka asli maqsad hai.",
-    "Dosti ka rishta anokha hai,Na gham ke liye na rone ke liye,Zindagi mein har pal dosti ka ehsaas ho,Kyunki dosti hi sabse khoobsurat rishta hai."]
+    "Dosti ka rishta anokha hai,Na gham ke liye na rone ke liye,Zindagi mein har pal dosti ka ehsaas ho,Kyunki dosti hi sabse khoobsurat rishta hai."];
   
-}
+    let randomQuotes = Math.random() * quotes.length;
+    let roundQuotes = Math.floor(randomQuotes);
+    let quotesGen = quotes[roundQuotes];
+    
+    let random_Quotes =document.querySelector('#quotes');
+    quotes.innertext = `" ${quotesGen} " `;
+  }
